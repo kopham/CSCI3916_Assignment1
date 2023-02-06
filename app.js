@@ -1,4 +1,3 @@
-//var server = require("http").createServer();
 var express = require('express')
 var bodyParser = require('body-parser')
 
@@ -19,8 +18,8 @@ app.post('/', (req, res) => {
     }
     res.send(req.body)
 })
-app.listen(process.env.PORT || 8080);
 
+app.listen(process.env.PORT || 8080);
 module.exports = app; // for testing
 
 //curl -d "echo" -H "Content-Type: text" -X POST http://localhost:8008
